@@ -1,0 +1,17 @@
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+app.use('/', (req, res, next) => {
+  if (req.originalUrl === '/') {
+    res.send('Service is running');
+    return;
+  }
+  next();
+});
+
+module.exports = app;
