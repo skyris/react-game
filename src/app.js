@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const mainRouter = require('./resources/mainRouter');
 
 const app = express();
 
@@ -13,5 +14,7 @@ app.use('/', (req, res, next) => {
   }
   next();
 });
+
+mainRouter(app);
 
 module.exports = app;
