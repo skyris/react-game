@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
 import { Provider } from 'react-redux';
 import store from './store';
 import {
@@ -17,8 +16,6 @@ function App() {
   useEffect(() => {
     console.log('App loaded');
   }, []);
-
-  if (true) return <Redirect to='/fail' />;
 
   return (
     <Provider store={store}>
@@ -38,4 +35,4 @@ const mapStateToProps = state => ({
     timerRanOut: state.timer.isRanOut,
 });
 
-export default connect(mapStateToProps, { })(App);
+export default App;
