@@ -1,0 +1,27 @@
+export const COUNTER_INCREMENT = 'COUNTER_INCREMENT ';
+
+export const DATA_INIT = 'DATA_INIT';
+export const DATA_LOADING = 'DATA_LOADING';
+export const DATA_LOAD_SUCCESS = 'DATA_LOAD_SUCCESS';
+export const DATA_LOAD_FAIL = 'DATA_LOAD_FAIL';
+
+export const ANSWER_INIT = 'ANSWER_INIT';
+export const ANSWER_LOADING = 'ANSWER_LOADING';
+export const ANSWER_CORRECT = 'ANSWER_CORRECT';
+export const ANSWER_WRONG = 'ANSWER_WRONG';
+export const ANSWER_LOAD_FAIL = 'ANSWER_LOAD_FAIL';
+export const ANSWER_GAME_WON = 'ANSWER_GAME_WON';
+
+export const SCORE_INIT = 'SCORE_INIT';
+export const SCORE_INCREMENT = 'SCORE_INCREMENT';
+
+export const SWITCH_LANGUAGE = 'SWITCH_LANGUAGE';
+
+export const TIMER_INIT = 'TIMER_INIT';
+export const TIMER_DECREMENT = 'TIMER_DECREMENT';
+export const TIMER_STARTED = 'TIMER_STARTED';
+export const TIMER_PAUSED = 'TIMER_PAUSED';
+export const TIMER_RAN_OUT = 'TIMER_RAN_OUT';
+
+export const MODAL_SHOW = 'MODAL_SHOW';
+export const MODAL_HIDE = 'MODAL_HIDE';
