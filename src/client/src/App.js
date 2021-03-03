@@ -20,11 +20,10 @@ function App() {
   return (
     <Provider store={store}>
         <Router>
-            <div>text</div>
-            <Route exact path='/' component={Invite} />
-            <Route path='/game' component={Game} />
-            <Route path='/win' component={Win} />
-            <Route path='/fail' component={Fail} />
+          <Route exact path='/' component={Invite} />
+          <Route path='/game' component={Game} />
+          <Route path='/win' component={Win} />
+          <Route path='/fail' component={Fail} />
         </Router>
     </Provider>
   );
