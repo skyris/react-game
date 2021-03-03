@@ -1,0 +1,28 @@
+{
+  "name": "game-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node src/server.js",
+    "server": "nodemon src/server.js",
+    "client": "npm start --prefix src/client",
+    "client:install": "npm install --prefix src/client",
+    "client:build": "npm run build --prefix src/client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.13",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7"
+  }
+}
